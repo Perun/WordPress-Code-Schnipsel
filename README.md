@@ -59,7 +59,7 @@ Falls man **Pingbacks** zulassen möchte:
 ``` php
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 ```
-Und als letzte Angabe vor `</head>` folgt der **Header-Hook**, der z.B. Angaben aus Plugins oder Funktionen zwischen `<head>` und `</head>` einfügt. Deswegen sollte er auf jeden fall vorhanden sein:
+Und als letzte Angabe vor `</head>` folgt der **Header-Hook**, der z.B. Angaben aus Plugins oder Funktionen zwischen `<head>` und `</head>` einfügt. Deswegen sollte er auf jeden Fall vorhanden sein:
 
 ```php
 <?php wp_head(); ?>
