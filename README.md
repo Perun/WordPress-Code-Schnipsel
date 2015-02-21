@@ -1,6 +1,6 @@
 # WordPress-Code-Schnipsel
 
-Code-Schnipsel die so anfallen wenn man ein neues WordPress-Theme erstellt...
+Code-Schnipsel die so anfallen wenn man ein **neues WordPress-Theme** erstellt...
 
 ## header.php
 
