@@ -48,7 +48,7 @@ elseif(is_category() or is_archive() or is_page() or is_single()) { ?>
 <?php } ?>
 ```
 
-Falls die Einbindung der CSS-Datei nicht in der functions.php definiert wurde kann man sie auch so einbinden:
+Falls die Einbindung der **CSS-Datei** nicht in der functions.php definiert wurde kann man sie auch so einbinden:
 
 ``` php
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
@@ -58,4 +58,15 @@ Falls man **Pingbacks** zulassen möchte:
 
 ``` php
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+```
+Und als letzte Angabe vor `</head>` folgt der **Header-Hook**, der z.B. Angaben aus Plugins oder Funktionen zwischen `<head>` und `</head>` einfügt. Deswegen sollte er auf jeden fall vorhanden sein:
+
+```php
+<?php wp_head(); ?>
+```
+
+Je nach Unterseite bekommt durch folgende Angaben, dass öffnende `body`-Tag **zusätzliche Klassenwerte**, was eine leichtere Ansprache durch CSS-Regeln ermöglicht:
+
+```php
+<body <?php body_class(); ?>>
 ```
